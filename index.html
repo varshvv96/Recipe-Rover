@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+
+
+
+    <title>Recipe Choice</title>
+    
+</head>
+<body>
+
+    
+   <header>
+    <nav>
+        <h1 class="head">Recipe Rover</h1>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="#recipe">Recipes</a></li>
+            <li><a href="#cat">Categories</a></li>
+            <li><a href="#about">About Us</a></li>
+
+           <li><a href="#contact">Contact</a></li>
+            
+            <li><a href="login.html">Login / Sign Up</a></li>
+            
+
+        </ul>
+        <form>
+            <!-- <button type="button" class="homeBtn" onclick="window.location.href='index.html';">
+                <i class="fa-solid fa-house"></i>         </button> -->
+
+            <input type="text" placeholder="Search for a recipe..."  class="searchBox">
+            <button type="submit" class="searchBtn">
+               
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+            </button>
+        </form>
+    </nav>
+   </header>
+   <main>
+    <section>
+        <!-- <div class="img">
+        <img src="img\bgc.jpeg" alt="">
+    </div> -->
+        <div class="recipe-container">
+
+            <h2></h2>
+            <!-- <h1>Taste the World from Your Kitchen</h1>
+            
+            <h5>Discover Your Next Favorite Dish</h5>
+            <div class ="button">Start Cooking</div> -->
+            
+        </div>
+
+        <div class="recip">
+            <h1>Taste the World from Your Kitchen</h1>
+            
+            <h5>Discover Your Next Favorite Dish</h5>
+            <div class ="button">Start Cooking <i class="fa-solid fa-utensils"></i></div>
+              
+
+        </div>
+
+        <!-- <div class="recip-image">
+           <img src="img/bgc.jpeg" alt="">
+        </div> -->
+
+       
+
+        <div class="recipe-details">
+            
+            <button type="button" class="recipe-close-btn">
+                <i class="fas fa-times"></i>
+
+            </button>
+            <div class="recipe-details-content">
+
+            </div>
+        </div>
+
+        <div>
+    
+        </div>
+    </section>
+
+    <section class="about-us"  id="about">
+        <h1 class="top">About Us</h1>
+        <div class="about-content">
+            <h1></h1>
+            <img src="img/about.jpg" alt="" class="about-img"> 
+           <div class="about-text">
+                <h5>Welcome to Recipe Choice! Our platform is dedicated to helping you discover delicious and diverse recipes from around the world. Whether you're an experienced chef or just starting in the kitchen, we provide you with the inspiration and tools you need to create amazing meals. Explore our vast collection of recipes and start your culinary adventure today!
+
+                    Our extensive recipe library features everything from classic comfort foods to innovative fusion dishes. You’ll find recipes for every meal of the day, including hearty breakfasts, light lunches, satisfying dinners, and indulgent desserts. Each recipe is crafted with care, ensuring that you get the best flavors and textures in every dish.
+                    
+                    For those with specific dietary needs, we offer a variety of options including vegetarian, vegan, gluten-free, and low-carb recipes. Our goal is to make cooking accessible and enjoyable for everyone, regardless of dietary restrictions.
+                    
+                    
+                    
+                    </h5>
+          
+                </div>
+        </div>
+    </section>
+<!-- 
+    featured recipes -->
+    <section class="featured-recipe" id="recipe">
+        <h1>Featured Recipes</h1>
+        <div class="card">
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Chicken Bhuna</div>
+                  
+                  
+            </div>
+
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Masala Corn Sandwich</div>
+                  
+            </div>
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Chilli Paneer</div>
+
+            </div>
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Cheese Garlic Bread</div>
+
+                  
+            </div>
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Fish Fry</div>
+
+                  
+            </div>
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Masala Paav</div>
+
+                  
+            </div>
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Spinach Rice With Creamy Paneer Recipe</div>
+
+                  
+            </div>
+            <div class="featured-photo">
+                <video  id="myVideo"autoplay muted loop controls>
+                    <source src="img/v8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="overlay">Bread Samosa</div>
+
+                  
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- categories -->
+       
+     <section class="typesList" id="cat">
+        <div class="header">
+        <h1>Categories</h1>
+        </div>
+        <br>
+        <br>
+        
+        
+        <div class="cat-image">
+            <img src="img/main.jpg" alt="">
+            <div class="overlayed">Main Course</div>
+        </div>
+
+        <div class="cat-image">
+            <img src="img/cat.jpg" alt="">
+            <div class="overlayed">Desserts</div>
+        </div>
+        <div class="cat-image">
+            <img src="img/health.jpg" alt="">
+            <div class="overlayed">Dietary Meals</div>
+        </div>
+        <div class="cat-image">
+            <img src="img/shakes.jpg" alt="">
+            <div class="overlayed">Shakes</div>
+        </div>
+
+     </section>
+
+     <!-- --contact -->
+     <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+        <form action="your-server-endpoint" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="social-icons">
+            <h5>Social Links</h5>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </section>
+<!-- -----scrollbar-->
+ <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+
+    
+<!-- ----- -->
+
+</main>
+ <script src="script.js"></script>
+</body>
+</html>
