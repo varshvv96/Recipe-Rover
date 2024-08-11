@@ -1,0 +1,730 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Josefin Sans',sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* made */
+body {
+    background-image: url('img/bgc.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 500px;
+}
+/* --made */
+
+
+
+
+
+body{
+    background-color: rgb(21, 38, 21);
+    color: white;
+}
+/* Style for home button */
+.homeBtn {
+    background-color: rgb(12, 58, 16);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 6px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+   cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    
+   /* display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;  */
+}
+
+.homeBtn:hover {
+ 
+    color: rgb(0, 0, 0);
+    background-color: rgb(108, 154, 119);
+}
+
+.homeBtn i {
+    font-size: 24px;
+    margin-top: 2px;
+}
+
+
+header nav {
+    background-color: rgb(108, 154, 119);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.recip-image{
+    background-image: url('./img/bgc.jpeg');
+    background-size: cover; 
+   
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.recip {
+    position: absolute;
+    top: 240px;
+    left: 10%;
+    transform: translateY(-50%);
+   
+   
+}
+.recip h5{
+    padding-top: 25px;
+    color:black;
+    font-size: 35px;
+    font-weight: 900;
+    margin-left: 250px;
+}
+
+.recip h1{
+    color: rgb(33, 39, 50);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    background-color: #213032;
+    color: #fff;
+   margin-top: 27px;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4s;
+    cursor: pointer;
+    margin-left: 450px;
+    }
+    .button:hover{
+        background-color: #97a2a3;
+        color: #213032;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+ .head{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-left: 40px;
+}    */
+
+header nav form{
+
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+form input[type="text"],button[type="submit"]{
+   border: none;
+    border-radius: 25px;
+    font-size: 16px;
+
+    padding: 10px;
+    
+}
+form button[type="submit"]{
+    background-color: rgb(177, 229, 227);
+    color: rgb(20, 25, 30);
+    cursor: pointer;
+    transform: .4s;
+    
+}
+form button[type="submit"]:hover , 
+.recipe button:hover, .recipe-close-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*  */
+.searchBox {
+    padding: 10px 40px 10px 10px; /* Add extra padding on the right for the icon */
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Style for the search button with the icon */
+.searchBtn {
+    position: absolute;
+    right: 30px; /* Position the button on the right side of the input */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 0px;
+}
+/* main section */
+
+/* comment the below for the text (tast,start button) to appear in the pattern i desired */
+.recipe-container{
+   
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 40px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    place-items: center;
+   
+}
+
+
+.recipe{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 6px;
+
+    box-shadow: 0 5px 10px rgba(34, 33, 33, 0.975), -5px -5px 10px rgba(133, 133, 129, 0.932);
+    cursor: pointer;
+    text-align: center;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe:hover{
+    transform: scale(1.1);
+}
+
+.recipe img{
+    height: 300px;
+}
+.recipe h3{
+    font-size: 24px;
+    margin-block: 5px;
+}
+
+.recipe p{
+
+    font-size: 20px;
+    color: gray;
+    margin: 5px 0;
+}
+
+.recipe span{
+    font-weight: 600;
+}
+.recipe button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: blueviolet;
+    color: white;
+}
+/* recipe details */
+.recipe-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    background-image: url('img/notes5.jpg');
+    opacity: 1;
+
+    
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+
+.recipe-details-content{
+    padding: 30px;
+   
+}
+.recipeName{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(31, 31, 84);
+    
+}
+.ingredientList li{
+
+    margin-top: 10px;
+    margin-left:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bolder;
+}
+.recipeInstructions p{
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-line;
+    color: black;
+    font-weight: bold;
+
+}
+.recipeInstructions h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color: black;
+}
+.recipeIngre h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color: black;
+}
+
+
+
+.recipeName, 
+.ingredientList, 
+.recipeInstructions {
+    margin-bottom: 20px;
+}
+.recipe-close-btn{
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dding scrollbar */
+.recipe-details::-webkit-scrollbar{
+    width: 10px;
+}
+
+.recipe-details::-webkit-scrollbar-thumb{
+    background: rgb(92, 84, 84);
+    border-radius: 16px;
+    --webkit-border-radius:16px;
+}
+body::-webkit-scrollbar{
+    width: 16px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: white;
+   
+}
+body::-webkit-scrollbar-track{
+    background: rgb(197, 185, 185);
+}
+
+
+/* about us */
+
+.about-us{
+    margin-top: 600px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    gap: 130px; /* Space between image and text */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.about-content h1{
+    text-align: center;
+    font-size: 50px;
+    
+    
+}
+.top{
+    font-size: 60px;
+    margin-left: 540px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-content h5{
+    margin-left:700px;
+    margin-top: 20px;
+    padding-right: 50px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+   
+}
+.about-img{
+    width: 370px;
+    height: 450px;
+    margin-left: 40px;
+   
+}
+.about-text{
+    max-width: 600px;
+}
+/* featured recipes */
+
+.featured-recipe h1{
+
+    font-size: 50px;
+    margin-left: 480px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+video {
+    width:300px;
+    height: 420px;
+}
+#myVideo::-webkit-media-controls {
+    display: none !important;
+  }
+  #myVideo::-moz-media-controls {
+    display: none !important;
+  }
+  #myVideo::-ms-media-controls {
+    display: none !important;
+  }
+  #myVideo::media-controls {
+    display: none !important;
+  }
+
+  .card{
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; /* Space between videos */
+        max-width: 1200px; /* Adjust as needed */
+        margin: 0 auto; /* Center the grid horizontally */
+        margin-top: 30px;
+    }
+
+    /* --- */
+    .featured-photo {
+        position: relative;
+        overflow: hidden; /* Ensure the overlay doesn't go outside the video */
+    }
+    
+    .featured-photo video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(29, 85, 12, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        opacity: 0; /* Hidden by default */
+        transition: opacity 0.3s ease; /* Smooth transition */
+        font-size: 16px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .featured-photo:hover .overlay {
+        opacity: 1; /* Show overlay on hover */
+    }
+
+    /* ---categories */
+    .header {
+        text-align: center; /* Center align the header text */
+        margin-bottom: 20px;
+        margin-left: 100%;
+        padding-right: 1380px; /* Space between header and images */
+    }
+   .typesList h1{
+    font-size: 50px;
+    
+    margin-top: 20px;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+   }
+   /* Ensure the section containing the images does not have overflow issues */
+.typesList {
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+    justify-content: center; /* Center align the images horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+.cat-image {
+    display: inline-block; /* Ensure images are inline */
+    margin: 10px; /* Space between images */
+    position: relative;
+    overflow: hidden; /* Hide overflow to prevent the overlay from spilling out */
+    box-sizing: border-box;
+}
+
+.cat-image img {
+    width: 230px; /* Fixed width for images */
+    height: 340px; /* Fixed height for images */
+    display: block; /* Remove bottom space/gap */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+.overlayed {
+    position: absolute; /* Position the overlay absolutely within the .cat-image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color for contrast */
+    display: flex; /* Flexbox for centering text */
+    align-items: center; /* Center-align vertically */
+    justify-content: center; /* Center-align horizontally */
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+    font-size: 18px; /* Adjust font size as needed */
+    box-sizing: border-box; /* Ensure overlay respects the box model */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cat-image:hover .overlayed {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+  
+
+.typesList {
+    margin-top: 30px;
+    background-color: rgb(63, 83, 26); /* Olive green background */
+     /* Optional: add some padding for spacing */
+    color: white; 
+    text-align: center; 
+}
+
+/* .cat-image {
+    display: inline-block; 
+    margin: 10px; 
+    
+    position: relative;
+    overflow: hidden; 
+  box-sizing: border-box;
+  width: 230px;
+  height: 340px;
+    
+
+}
+
+.cat-image img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    object-fit: cover;
+    
+    
+}
+.overlayed {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    font-size: 18px; 
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.cat-image:hover .overlayed {
+    opacity: 1; 
+    margin-top: 29px;
+  
+} */
+
+/* ..contact */
+
+/*Contact form*/
+.contact {
+    padding: 20px;
+    background-color: #0d361c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   padding-top: 30px;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(247, 247, 247);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    /* color: black; */
+    color: rgb(250, 250, 250);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: rgb(14, 10, 10);
+    border: black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* --tabs */
+/* Navigation links styling */
+.nav-links {
+    list-style: none;
+    /* display: flex; */
+    gap: 0px;
+    /* margin-right: 10px; */
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-links li {
+    display: inline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black; /* Default text color */
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: rgb(61, 134, 51);
+    color: white; /* Text color on hover */
+    border-radius: 5px;
+    
+}
+
+/* --lscrollbar */
+/* Scroll to Top Button Styles */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    bottom: 20px; /* 20px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Ensure it stays on top */
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    background-color: #fdf257; /* Background color */
+    color: #1b1212; /* Text color */
+    cursor: pointer; /* Cursor on hover */
+    padding: 15px; /* Padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    opacity: 0.3;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* ---icons */
+.social-icons h5{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.social-icons i{
+    margin-top: 10px;
+    gap: 5px;
+    padding-right: 7px;
+}
+/* REsponsive coding */
+
+@media screen and(max-width:600px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav form{
+        width:80%;
+        margin-top: 20px;
+    }
+    
+}
+
+
